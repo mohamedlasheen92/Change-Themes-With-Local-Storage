@@ -1,0 +1,145 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.4rem;
+  word-spacing: 1rem;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  height: 100%;
+}
+.sidebar .colors {
+  display: flex;
+  margin: 1rem 0;
+  gap: 0.4rem;
+}
+.sidebar .colors li {
+  width: 2.5rem;
+  height: 2rem;
+  border-radius: 0.17rem;
+  cursor: pointer;
+}
+.sidebar .colors li[data-color=red] {
+  background-color: #f72585;
+}
+.sidebar .colors li[data-color=green] {
+  background-color: #588157;
+}
+.sidebar .colors li[data-color=blue] {
+  background-color: #2a9d8f;
+}
+.sidebar .colors li[data-color=orange] {
+  background-color: #fb8500;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    height: 10rem;
+    width: 100%;
+  }
+  h1 {
+    margin-top: 12rem;
+  }
+  body {
+    padding: 0 !important;
+  }
+}
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+  text-align: center;
+  margin: 0 2rem;
+}
+.products-container .box {
+  padding: 1.5rem;
+  border: 0.2rem solid;
+  box-shadow: 0.6rem 0.8rem 1rem #333;
+}
+.products-container .box img {
+  width: 10rem;
+  border-radius: 0.5rem;
+}
+.products-container .box h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem;
+}
+.products-container .box .desc {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+.products-container .box .price {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+[data-default-color=red] .skin-color,
+[data-default-color=red] .skin-background {
+  color: #f72585;
+}
+[data-default-color=red] .opacity {
+  background-color: rgba(247, 37, 133, 0.5);
+}
+[data-default-color=red] .box {
+  border-color: #f72585;
+}
+
+[data-default-color=green] .skin-color,
+[data-default-color=green] .skin-background {
+  color: #588157;
+}
+[data-default-color=green] .opacity {
+  background-color: rgba(88, 129, 87, 0.5);
+}
+[data-default-color=green] .box {
+  border-color: #588157;
+}
+
+[data-default-color=blue] .skin-color,
+[data-default-color=blue] .skin-background {
+  color: #2a9d8f;
+}
+[data-default-color=blue] .opacity {
+  background-color: rgba(42, 157, 143, 0.5);
+}
+[data-default-color=blue] .box {
+  border-color: #2a9d8f;
+}
+
+[data-default-color=orange] .skin-color,
+[data-default-color=orange] .skin-background {
+  color: #fb8500;
+}
+[data-default-color=orange] .opacity {
+  background-color: rgba(251, 133, 0, 0.5);
+}
+[data-default-color=orange] .box {
+  border-color: #fb8500;
+}/*# sourceMappingURL=style.css.map */
